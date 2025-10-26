@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kikulacho</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Kikulacho - The Home of Kenyan Cuisine</h1>
+      <h2>Contact Us</h2>
+
+      <nav>
+        <table border="0" width="300px">
+          <tbody>
+            <tr>
+              <td><a href="index.html">Home</a></td>
+              <td><a href="menu.html">Menu</a></td>
+              <td><a href="about.html">About us</a></td>
+              <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Reservations</h2>
+
+      <form id="contform">
+        <label for="phone">Phone number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <br /><br />
+        <label for="pax">Pax:</label>
+        <input type="number" id="pax" name="pax" min="1" max="10" required />
+
+        <br /><br />
+        <label for="kids">Kids below age of 3:</label>
+        <input type="number" id="pax" name="pax" min="0" max="9" />
+
+        <br /><br />
+        <label for="message">Any special considerations:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <br /><br />
+
+        <br />
+        Subcribe to updates on offers<label for="sub"> </label>
+        <input type="checkbox" id="sub" name="sub" value="sub" />
+        <br /><br />
+
+        <input type="submit" id="button" value="submit" />
+        <br /><br />
+        <hr />
+      </form>
+
+      <img src="assets\googlem.jpg" alt="Google Map" />
+    </main>
+
+    <footer>
+      <hr />
+      <table border="0" width="180px">
+        <tbody>
+          <tr>
+            <td><a href="mailto:info@kikulacho.com">Email us</a></td>
+            <td><a href="tel:+254 780 000">Telephone</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Visit our socials on:
+        <a href="https://instagram.com" target="_blank">Instagram</a> and
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </p>
+
+      <p>&copy;2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contform")
+        .addEventListener("submit", function (event) {
+          let phone = document.getElementById("phone").value;
+          let pax = document.getElementById("pax").value;
+          let sub = document.getElementById("email").value;
+
+          alert(`Your reservation has been made`);
+        });
+    </script>
+
+  </body>
+</html>
