@@ -15,4 +15,4 @@ The website is created using HTML only.
 Live  : <a href="https://wginkajiado.github.io/kikulacho/">View Here</a>
 
 ## Project Landing Page
-![image](assets\landing_page.jpg)
+![image](https://github.com/WGinKajiado/kikulacho/blob/main/assets/landing_page.jpg?raw=true)
